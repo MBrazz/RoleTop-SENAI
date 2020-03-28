@@ -1,0 +1,11 @@
+tipo_usuario=1;nome=aaaaa;email=1234567;senha=aaaa@222.com;confirmarsenha1234567
+tipo_usuario=1;nome=aaaaa;email=aaaa@222.com;senha=1234567;confirmarsenha1234567
+tipo_usuario=0;nome=aaaaa;email=admin@email.com;senha=123456;confirmarsenha123456
+tipo_usuario=1;nome=aaaaa;email=aaaa@222.com;senha=123456;confirmarsenha123456
+tipo_usuario=1;nome=Teste;email=teste@email.com;senha=123456;confirmarsenha123456
+tipo_usuario=1;nome=aaaaa;email=mateusbraz@gmail.com;senha=123456;confirmarsenha123456
+tipo_usuario=1;nome=Teste;email=mateusbraz@gmail.com;senha=123456;confirmarsenha123456
+tipo_usuario=1;nome=Felipe;email=felipesugisawa1@gmail.com;senha=1234567;confirmarsenha1234567
+tipo_usuario=1;nome=Teste;email=teste@email.com;senha=123456;confirmarsenha123456
+tipo_usuario=1;nome=diego;email=diegomelhordoping@email.com;senha=123456;confirmarsenha123456
+tipo_usuario=1;nome=Alexandre;email=alexandre@email.com;senha=123456;confirmarsenha123456

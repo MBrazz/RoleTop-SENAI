@@ -1,0 +1,71 @@
+ @model RoleTopMVC.ViewModels.ReservaViewModel
+        <section id="conta">
+    <div class="perfil">
+        <img src="../img/profile.png" height="80px" width="80px">
+        </div>
+
+    <main>
+             <form method="POST" action='@Url.Action("Registrar","Reserva")'>
+            
+
+                    <div>
+                            <label for="Nome">Nome Completo</label>
+                            <br />
+                            <input id="nome" type="name" name="nome" />
+                        </div>
+                
+                <div>
+                    <label for="email">E-mail</label>
+                    <br />
+                    <input id="email" type="email" name="email" placeholder="Ex.: roletop@email.com" />
+                </div>
+    
+                <div>
+                    <label for="cpf">CPF</label>
+                    <br />
+                    <input id="cpf" type="text" name="cpf" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00">
+                </div>
+                        <div>
+                            <label for="eventos">Tipo de Evento</label>
+                            <select id="eventos" name="evento" >
+                                <option value="" disabled selected>Selecione</option>
+                                @foreach (var evento in Model.Eventos)
+                                {
+                                    <option value="@evento.Nome">@evento.Nome por @evento.Preco
+                                        
+                                    </option>
+                                }
+                            </select>
+
+                                
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Outro? Qual?">
+
+
+                        </div>
+                        <div>
+                            <label for="data">Data do Evento</label>
+                            <br>
+                            <input id="data" required type="date" autocomplete="off">
+                        </div>
+
+
+                        <label>Forma de Pagamento</label>
+                        <div class="radio">
+                            <input name="radios" type="radio" id="radio-button-1">
+                            <label for="radio-button-1">Crédito</label>
+                        </div>
+                        <div class="radio">
+                            <input name="radios" type="radio" id="radio-button-2">
+                            <label for="radio-button-2">Débito</label>
+                        </div>
+                        <div class="radio">
+                            <input name="radios" type="radio" id="radio-button-3">
+                            <label for="radio-button-3">Boleto</label>
+                        </div>
+
+
+    
+                <input type="submit" value="Reservar" />
+            </form>
+        </main>
+    </section>

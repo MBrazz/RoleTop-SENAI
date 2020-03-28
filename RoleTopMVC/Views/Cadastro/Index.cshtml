@@ -1,0 +1,36 @@
+<h1>Cadastro</h1>
+    <section id="conta">
+        <div class="perfil">
+            <img src="../img/profile.png" height="80px" width="80px">
+        </div>
+
+<main>
+            <form method="POST" action='@Url.Action("CadastrarCliente", "Cadastro")'>
+                <div>
+                    <label for="Nome">Nome Completo</label>
+                    <br />
+                    <input id="nome" type="name" name="nome" />
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <br />
+                    <input id="email" type="email" name="email"/>
+                </div>
+
+                <div>
+                    <label for="senha">Senha</label>
+                    <br />
+                    <input id="senha" type="password" name="senha" />
+                </div>
+
+                <div>
+                    <label for="senha">Confirmar Senha</label>
+                    <br />
+                    <input id="senha" type="password" name="confirmarsenha" />
+                </div>
+
+                <input type="submit" value="Confirmar" />
+            </form>
+        </main>
+        </section>
